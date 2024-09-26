@@ -19,4 +19,5 @@ class Pedido(models.Model):
     item = models.ManyToManyField(Item)
     valor_total = models.FloatField(default=0)
     data_cadastro = models.DateTimeField(auto_now=True)
-
+    pago = models.BooleanField(default=False)
+    

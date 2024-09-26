@@ -32,4 +32,11 @@ class PedidosSerializer(ModelSerializer):
         fields = ['cliente', 'endereco', 'item', 'valor_total']
 
 
+class PagamentoSerializer(ModelSerializer):
+
+    class Meta:
+        model = Pedido
+        fields  = ['id', 'cliente', 'endereco', 'valor_total', 'pago']
+
+
     
